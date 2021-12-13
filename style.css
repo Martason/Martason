@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: rgb(110, 90, 76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 1200px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_Side {
+  position: relative;
+  background: #643806;
+  padding: 40px;
+}
+
+.profile-text{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center ;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.image-box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+    overflow: hidden;
+}
+
+.image-box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text h2{
+    color: #fff;
+    font-size: 1,5em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1,4em;
+}
+
+.profile-text h2 span{
+    font-size: 0.8em;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+
+.title{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #cc7a1c;;
+}
+
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5{
+    color: #cc7a1c;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight:bold;
+}
+.contactInfo.education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .right_Side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+  }
+
+
+
+
+
+
+
+/* verkar som att man inte kan blanda färg input hejvillt? tänker på rga / # osv. 
