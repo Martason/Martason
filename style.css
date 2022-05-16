@@ -59,12 +59,12 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 .profile-text h2{
     color: #fff;
-    font-size: 1,5em;
+    font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
     font-weight: 600;
-    line-height: 1,4em;
+    line-height: 1.4em;
 }
 
 .profile-text h2 span{
@@ -97,13 +97,35 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #cc7a1c;;
+    color: #cc7a1c;
 }
 
 .contactInfo ul li span{
     color: #fff;
     font-weight: 300;
 }
+
+.contactInfo ul li a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+.contactInfo ul li a::after{
+content: "";
+height: 3px;
+width: 0;
+background: #cc7a1c;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+
+.contactInfo ul li a:hover::after{
+    left: 30px;
+    width: 80%;
+}
+
 .contactInfo.education li{
     margin-bottom: 15px;
 }
@@ -221,20 +243,13 @@ margin-top: 5px;
       list-style: none;
       color: #333;
       font-weight: 500;
-      margin: 10px, 0;
+      margin: 10px 0;
   }
 
   .interest ul li .fa{
       color: #cc7a1c;
       font-size: 18px;
-      width: 20;
+      width: 20px;
+      
 
   }
-
-
-
-
-
-
-
-/* verkar som att man inte kan blanda färg input hejvillt? tänker på rga / # osv. 
